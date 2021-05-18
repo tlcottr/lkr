@@ -57,10 +57,10 @@
   opacity: 0;
 }
 .cursor {
-  cursor: url("../img/cursor.png"), auto;
+  cursor: url("img/cursor.png"), auto;
 }
 .cursorWhite {
-  cursor: url("../img/cursorWhite.png"), auto;
+  cursor: url("img/cursorWhite.png"), auto;
 }
 
 // Landing
@@ -122,7 +122,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: url("../img/cursor.png"), auto;
+  cursor: url("img/cursor.png"), auto;
 }
 .fillWhite {
   background-color: white;
@@ -175,7 +175,7 @@
   width: auto;
   height: auto;
   font-size: 1em;
-  cursor: url("../img/cursor.png"), auto;
+  cursor: url("img/cursor.png"), auto;
 }
 .logoTop {
   width: 100%;
