@@ -1,0 +1,249 @@
+//global fonts
+@font-face {
+    font-family: 'futuraextra_black_condensed';
+    src: url('../fonts/futura_extra_black_condensed_regular-webfont.woff2') format('woff2'),
+         url('../fonts/futura_extra_black_condensed_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'futuracondensed_bold';
+    src: url('../fonts/futura_bold_condensed-webfont.woff2') format('woff2'),
+         url('../fonts/futura_bold_condensed-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TradeGothic LT CondEighteen';
+    src: url('../fonts/TradeGothicLT-BoldCondTwenty.woff2') format('woff2'),
+        url('../fonts/TradeGothicLT-BoldCondTwenty.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'TradeGothic LT';
+    src: url('../fonts/TradeGothicLT.woff2') format('woff2'),
+        url('../fonts/TradeGothicLT.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+// Global
+#body {
+  width:100vw;
+  height:100vh;
+  overflow: hidden;
+  background-color: #efefef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  flex-direction: row;
+}
+.iphone {
+  width: 330px;
+  height: 620px;
+  background-color: white;
+  position: relative;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  overflow: hidden;
+}
+.icon {
+  font-size: 1em;
+}
+.fade {
+  opacity: 0;
+}
+.cursor {
+  cursor: url("../img/cursor.png"), auto;
+}
+.cursorWhite {
+  cursor: url("../img/cursorWhite.png"), auto;
+}
+
+// Landing
+
+.layer1 {
+  width: 100%;
+  height: 100%;
+  background-color: #2955f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+  z-index: 0;
+  position: relative;
+}
+.logo {
+  width: 100px;
+  height: 100px;
+  margin: 0;
+}
+.logoContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  position: absolute;
+  top:40%;
+  opacity: 1;
+  transition-duration: 1.5s;
+  transition-property: opacity;
+}
+.buttonContainer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 15%;
+  opacity: 1;
+  transition-duration: 1.5s;
+  transition-delay: 1s;
+  transition-property: opacity;
+}
+.myButton {
+	background-color:transparent;
+	border-radius:42px;
+	border:2px solid #ffffff;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	width:140px;
+  height:45px;
+	text-decoration:none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: url("../img/cursor.png"), auto;
+}
+.fillWhite {
+  background-color: white;
+  color: black;
+}
+.buttonText {
+  margin: 0 auto;
+}
+
+// Join
+
+.joinLayer {
+  width: 100%;
+  height: 0;
+  background-color:#ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+  z-index: 1;
+  position: absolute;
+  bottom:0;
+  left:0;
+  transition: 300ms ease-out;
+  transition-delay: 0s;
+}
+.fullHeight {
+  height: 100%;
+  transition: 300ms ease-in-out;
+}
+.joinLayerContent {
+  opacity: 0;
+  transition: 300ms ease-in-out;
+  transition-delay: 0s;
+  display: flex;
+  width: 100%;
+}
+.opacityFull {
+  opacity: 1;
+  transition: 300ms ease-in-out;
+}
+.x {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1.25em;
+  width: auto;
+  height: auto;
+  font-size: 1em;
+  cursor: url("../img/cursor.png"), auto;
+}
+.logoTop {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 1.75em;
+}
+.logoNike {
+  height: 15px;
+  width: auto;
+  margin: 0 auto;
+}
+.caps {
+  text-transform: uppercase;
+}
+h1 {
+  font-family: var(--nike-bold);
+  font-size: 1.4em;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+.title {
+  width: 100%;
+}
+.paragraph {
+  font-family: var(--nike-body);
+  font-size: .8em;
+  opacity: .5;
+  display: flex;
+  text-align: center;
+  line-height: 1.5em;
+  justify-content: center;
+}
+.JoinForm {
+  display: block;
+  width: 100%;
+}
+.formList {
+  text-align: center;
+  display: flex;
+  margin: 0 auto;
+}
+form {
+  width: 270px;
+  padding-left: 1.25em;
+}
+input {
+  width: 100%;
+  height: 2.5em;
+  margin-bottom:1em;
+  -webkit-appearance: none;
+  border-width: .5px;
+  border-color: rgba(0, 0, 0, .25);
+  border-radius: 3px;
+  font-family: var(--nike-body);
+  font-size: .8em;
+  padding-left: 1em;
+}
+::placeholder {
+  color:rgba(0, 0, 0, .5);
+}
+// Animations
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Taylor Cottrell</title>
+
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="stylesheets/web.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Fonts -->
+
+    <!-- Fontawesome Icon fotns -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/af692b5953.js" crossorigin="anonymous"></script>
+    <script src="../js/lkr.js"></script>
+
+    <!-- Js -->
+    <script>
+    var nav = false;
+    function openMenu(){
+        document.getElementById('menu').classList.toggle("show");
+        document.getElementById('x').classList.add("rot");
+        document.getElementById('body').classList.add("bodyHasOverlay");
+        document.getElementById('divider').classList.add("divider");
+        document.getElementById('divider2').classList.add("divider2");
+        document.getElementById('divider3').classList.add("divider3");
+        document.getElementById('x').style.color = 'white';
+        document.getElementById('logo').style.color = 'white';
+        document.documentElement.style.overflow = 'hidden';
+        document.body.scroll = "no";
+        nav = true;
+    }
+    function closeMenu(){
+        document.getElementById('menu').classList.toggle("show");
+        document.getElementById('x').classList.remove("rot");
+        document.getElementById('body').classList.remove("bodyHasOverlay");
+        document.getElementById('divider').classList.remove("divider");
+        document.getElementById('divider2').classList.remove("divider2");
+        document.getElementById('divider3').classList.remove("divider3");
+        document.getElementById('x').style.color = 'black';
+        document.getElementById('logo').style.color = 'black';
+        document.documentElement.style.overflow = 'scroll';
+        document.body.scroll = "yes";
+        nav = false;
+    }
+    function toggleMenu(){
+      nav ? closeMenu() : openMenu();
+    }
+    </script>
+
+</head>
+<body class="wbg fade-in" id="body">
+  <div class="iphone cursor" id="iphone">
+    <div class="layer1">
+      <div class="logoContainer fade" id="logoContainer">
+      <img src="../img/lkr_logo.png" class="logo">
+      </div>
+      <div class="buttonContainer fade" id="buttonContainer">
+        <a href="#" class="myButton fillWhite" onclick="join()"><p class="buttonText" onclick="join()">Join</p></a>
+        <a href="#" class="myButton"><p class="buttonText">Log In</p></a>
+      </div>
+    </div>
+    <div class="joinLayer" id="joinLayer">
+      <div class="joinLayerContent" id="joinLayerContent">
+      <div class="x cursor" onclick="closeJoin()"><i class="fas fa-times icon" onclick="closeJoin()"></i></div>
+      <div class ="JoinForm">
+        <div class="logoTop">
+        <img src="../img/logo.png" class="logoNike">
+      </div>
+      <div class="title caps">
+        <h1>Become a nike member</h1>
+      </div>
+      <div class="paragraph">
+        <p>Create your Nike Member profile and get first<br> access to the very best of Nike products,<br> inspiration and community.</p>
+      </div>
+      <div class="formList">
+        <form>
+          <input type="text" placeholder="Email Address"><br>
+          <input type="text" placeholder="Password"><br>
+          <input type="text" placeholder="First Name"><br>
+          <input type="text" placeholder="Last Name"><br>
+          <input type="text" placeholder="Date of Birth"><br>
+        </form>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <script>
+  </script>
+</body>
+
+<header>
+</header><!-- End Header -->
+
+
+ <!-- start footer -->
+<footer>
+</footer> <!-- end footer -->
+
+
+<!-- jQuery-->
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+</html>

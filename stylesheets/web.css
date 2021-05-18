@@ -1,0 +1,303 @@
+@import url('href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
+/* line 4, ../sass/_variables.scss */
+:root {
+  --white: #ffffff;
+  --gray: #f4f4f4;
+  --standard-font: 'Helvetica', sans-serif;
+  --nike-extra: 'futuraextra_black_condensed', sans-serif;
+  --nike-bold: 'TradeGothic LT CondEighteen', sans-serif;
+  --nike-body: 'TradeGothic LT', sans-serif;
+}
+
+@font-face {
+  font-family: 'futuraextra_black_condensed';
+  src: url("../fonts/futura_extra_black_condensed_regular-webfont.woff2") format("woff2"), url("../fonts/futura_extra_black_condensed_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'futuracondensed_bold';
+  src: url("../fonts/futura_bold_condensed-webfont.woff2") format("woff2"), url("../fonts/futura_bold_condensed-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TradeGothic LT CondEighteen';
+  src: url("../fonts/TradeGothicLT-BoldCondTwenty.woff2") format("woff2"), url("../fonts/TradeGothicLT-BoldCondTwenty.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TradeGothic LT';
+  src: url("../fonts/TradeGothicLT.woff2") format("woff2"), url("../fonts/TradeGothicLT.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* line 34, ../sass/_body.scss */
+#body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #efefef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  flex-direction: row;
+}
+
+/* line 45, ../sass/_body.scss */
+.iphone {
+  width: 330px;
+  height: 620px;
+  background-color: white;
+  position: relative;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  overflow: hidden;
+}
+
+/* line 53, ../sass/_body.scss */
+.icon {
+  font-size: 1em;
+}
+
+/* line 56, ../sass/_body.scss */
+.fade {
+  opacity: 0;
+}
+
+/* line 59, ../sass/_body.scss */
+.cursor {
+  cursor: url("../img/cursor.png"), auto;
+}
+
+/* line 62, ../sass/_body.scss */
+.cursorWhite {
+  cursor: url("../img/cursorWhite.png"), auto;
+}
+
+/* line 68, ../sass/_body.scss */
+.layer1 {
+  width: 100%;
+  height: 100%;
+  background-color: #2955f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+  z-index: 0;
+  position: relative;
+}
+
+/* line 82, ../sass/_body.scss */
+.logo {
+  width: 100px;
+  height: 100px;
+  margin: 0;
+}
+
+/* line 87, ../sass/_body.scss */
+.logoContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  opacity: 1;
+  transition-duration: 1.5s;
+  transition-property: opacity;
+}
+
+/* line 98, ../sass/_body.scss */
+.buttonContainer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 15%;
+  opacity: 1;
+  transition-duration: 1.5s;
+  transition-delay: 1s;
+  transition-property: opacity;
+}
+
+/* line 111, ../sass/_body.scss */
+.myButton {
+  background-color: transparent;
+  border-radius: 42px;
+  border: 2px solid #ffffff;
+  display: inline-block;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  width: 140px;
+  height: 45px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: url("../img/cursor.png"), auto;
+}
+
+/* line 127, ../sass/_body.scss */
+.fillWhite {
+  background-color: white;
+  color: black;
+}
+
+/* line 131, ../sass/_body.scss */
+.buttonText {
+  margin: 0 auto;
+}
+
+/* line 137, ../sass/_body.scss */
+.joinLayer {
+  width: 100%;
+  height: 0;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 300ms ease-out;
+  transition-delay: 0s;
+}
+
+/* line 155, ../sass/_body.scss */
+.fullHeight {
+  height: 100%;
+  transition: 300ms ease-in-out;
+}
+
+/* line 159, ../sass/_body.scss */
+.joinLayerContent {
+  opacity: 0;
+  transition: 300ms ease-in-out;
+  transition-delay: 0s;
+  display: flex;
+  width: 100%;
+}
+
+/* line 166, ../sass/_body.scss */
+.opacityFull {
+  opacity: 1;
+  transition: 300ms ease-in-out;
+}
+
+/* line 170, ../sass/_body.scss */
+.x {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1.25em;
+  width: auto;
+  height: auto;
+  font-size: 1em;
+  cursor: url("../img/cursor.png"), auto;
+}
+
+/* line 180, ../sass/_body.scss */
+.logoTop {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 1.75em;
+}
+
+/* line 186, ../sass/_body.scss */
+.logoNike {
+  height: 15px;
+  width: auto;
+  margin: 0 auto;
+}
+
+/* line 191, ../sass/_body.scss */
+.caps {
+  text-transform: uppercase;
+}
+
+/* line 194, ../sass/_body.scss */
+h1 {
+  font-family: var(--nike-bold);
+  font-size: 1.4em;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+/* line 200, ../sass/_body.scss */
+.title {
+  width: 100%;
+}
+
+/* line 203, ../sass/_body.scss */
+.paragraph {
+  font-family: var(--nike-body);
+  font-size: .8em;
+  opacity: .5;
+  display: flex;
+  text-align: center;
+  line-height: 1.5em;
+  justify-content: center;
+}
+
+/* line 212, ../sass/_body.scss */
+.JoinForm {
+  display: block;
+  width: 100%;
+}
+
+/* line 216, ../sass/_body.scss */
+.formList {
+  text-align: center;
+  display: flex;
+  margin: 0 auto;
+}
+
+/* line 221, ../sass/_body.scss */
+form {
+  width: 270px;
+  padding-left: 1.25em;
+}
+
+/* line 225, ../sass/_body.scss */
+input {
+  width: 100%;
+  height: 2.5em;
+  margin-bottom: 1em;
+  -webkit-appearance: none;
+  border-width: .5px;
+  border-color: rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  font-family: var(--nike-body);
+  font-size: .8em;
+  padding-left: 1em;
+}
+
+/* line 237, ../sass/_body.scss */
+::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
